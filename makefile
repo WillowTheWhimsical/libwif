@@ -2,16 +2,13 @@ CC=gcc
 CFLAGS=-Wall -Werror -O3
 LDFLAGS=-shared
 
-SRC=wif.c
-TARGET=libwif.so
-
 all:
-	$(CC) $(CFLAGS) $(SRC) $(LDFLAGS) -o $(TARGET)
+	$(CC) $(CFLAGS) libwif.c $(LDFLAGS) -o libwif.so
 
 install:
-	cp $(TARGET) /usr/local/lib/
-	cp wif.h /usr/local/include
+	cp libwif.so /usr/local/lib/
+	cp libwif.h /usr/local/include
 
 uninstall:
-	rm -f /usr/local/lib/$(TARGET)
-	rm -f /usr/local/include/wif.h
+	rm -f /usr/local/lib/libwif.so
+	rm -f /usr/local/include/libwif.h
