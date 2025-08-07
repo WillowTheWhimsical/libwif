@@ -1,4 +1,4 @@
-#include "wif.h"
+#include "libwif.h"
 
 #include <stdio.h>
 #include <malloc.h>
