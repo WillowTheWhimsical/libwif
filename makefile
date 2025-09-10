@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-Wall -Werror -O3
+CFLAGS=-Wall -O3
 LDFLAGS=-shared
 
 all:
